@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".ChooseLanguages">
+
+    <ImageView
+        android:layout_width="214dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="222px"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_horizontal"
+        android:text="Tilni Tanlash"
+        android:textColor="@color/textColor"
+        android:textSize="30sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="240dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="100px"
+        app:cardElevation="15dp"
+        app:cardBackgroundColor="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:cardCornerRadius="33dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ЎЗБЕКЧА"
+            android:textSize="19sp"
+            android:textColor="@color/textColor2"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="240dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="@color/white"
+        android:clickable="true"
+        app:cardCornerRadius="33dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="O'ZBEKCHA"
+            android:textSize="19sp"
+            android:textColor="@color/textColor2"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardView.Light"
+        android:layout_width="240dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="@color/white"
+        android:clickable="true"
+        app:cardCornerRadius="33dp"
+        android:outlineAmbientShadowColor="@color/textColor2"
+        android:outlineSpotShadowColor="@color/textColor2"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="РУССКИЙ"
+            android:textSize="19sp"
+            android:textColor="@color/textColor2"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <View
+        android:layout_width="205dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="25px"
+        android:layout_gravity="center_horizontal"
+        android:elevation="15dp"
+        android:fadingEdgeLength="2dp"
+        android:background="@drawable/frame_globe"/>
+
+</LinearLayout>
