@@ -47,7 +47,7 @@ class MenuActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
 
         when(item.itemId){
-            R.id.Ilova_Haqida ->{
+            R.id.info ->{
                 setToolBar("First")
                 changeFragment(About_app())
             }

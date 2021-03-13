@@ -14,6 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         android:orientation="vertical">
 
 
@@ -54,6 +55,8 @@
 
     </LinearLayout>
 
+    
+
     <androidx.cardview.widget.CardView
         android:layout_width="950px"
         android:layout_height="150px"
@@ -65,15 +68,15 @@
         android:outlineAmbientShadowColor="@color/buttons"
         android:layout_gravity="center_horizontal">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:background="@drawable/search_shape" />
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="15dp"-->
+<!--            android:background="@drawable/search_shape" />-->
 
-        <View
-            android:layout_width="30dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/shadow_left" />
+<!--        <View-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/shadow_left" />-->
 
         <EditText
             android:id="@+id/drug_name"
@@ -123,15 +126,15 @@
         android:outlineAmbientShadowColor="@color/buttons"
         android:layout_gravity="center_horizontal">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:background="@drawable/search_shape" />
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="15dp"-->
+<!--            android:background="@drawable/search_shape" />-->
 
-        <View
-            android:layout_width="25dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shadow_left" />
+<!--        <View-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/shadow_left" />-->
 
         <TextView
             android:layout_width="wrap_content"

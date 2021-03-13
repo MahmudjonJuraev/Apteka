@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
-        <item android:icon="@drawable/ic_home" android:title="Ilova Haqida" android:id="@+id/Ilova_Haqida"/>
+        <item android:icon="@drawable/ic_info" android:title="Ilova haqida" android:id="@+id/info"/>
+        <item android:icon="@drawable/ic_home" android:title="Bosh sahifa" android:id="@+id/home_page"/>
         <item android:icon="@drawable/ic_add_circle" android:title="Sorovnoma" android:id="@+id/Sorovnoma" />
         <item android:icon="@drawable/ic_question_answer" android:title="Ko'p beriladigon savollar" android:id="@+id/Kop_beriladigon_savollar"/>
         <item android:icon="@drawable/ic_translate" android:title="Tilni o'zgartirish" android:id="@+id/Tilni_ozgartirish"/>
         <item android:icon="@drawable/ic_location" android:title="Hududni Tanlash" android:id="@+id/Hududni_Tanlash"/>
         <item android:icon="@drawable/ic_phone" android:title="+998 99 999-99-99" android:id="@+id/phone"/>
+
     </group>
 
 
