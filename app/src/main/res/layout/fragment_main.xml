@@ -14,7 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:orientation="vertical">
 
 
@@ -55,7 +55,41 @@
 
     </LinearLayout>
 
-    
+    <androidx.cardview.widget.CardView
+        android:layout_width="950px"
+        android:layout_height="500px"
+        android:layout_marginTop="200px"
+        app:cardCornerRadius="20px"
+        android:background="@color/buttons"
+        android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qidiruv natijalari:"
+        android:textColor="@color/language"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70px"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_drugs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="950px"
