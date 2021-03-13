@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Apteki">
+        <activity android:name=".SearchingPageActivity"></activity>
         <activity
             android:name=".MenuActivity"
-            android:theme="@style/NoActionBarApteki"></activity>
+            android:theme="@style/NoActionBarApteki" />
         <activity
             android:name=".ChooseLocationsActivity"
             android:theme="@style/NoActionBarApteki" />

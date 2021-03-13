@@ -11,4 +11,8 @@
     <color name="textColor">#FFF887</color>
     <color name="textColor2">#304F42</color>
     <color name="pressedColor">#304F42</color>
+    <color name="back_fon">#6FA21C</color>
+    <color name="letter">#FFF887</color>
+    <color name="language">#304F42</color>
+    <color name="buttons">#F5F5FA</color>
 </resources>
