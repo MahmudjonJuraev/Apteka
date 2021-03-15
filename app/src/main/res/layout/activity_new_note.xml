@@ -21,7 +21,6 @@
         app:cardCornerRadius="10dp"
         app:neomorph_shadow_color="#2C2B2B"
         app:neomorph_shadow_type="inner"
-
         app:neumorph_backgroundColor="@color/white"
         tools:ignore="MissingClass,MissingConstraints">
 

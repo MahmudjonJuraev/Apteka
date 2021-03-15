@@ -1,0 +1,106 @@
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Base application theme. -->\r\n    <style name=\"Theme.Apteki\" parent=\"Theme.MaterialComponents.DayNight.DarkActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/purple_500</item>\r\n        <item name=\"colorPrimaryVariant\">@color/purple_700</item>\r\n        <item name=\"colorOnPrimary\">@color/white</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_700</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\" tools:targetApi=\"l\">?attr/colorPrimaryVariant</item>\r\n        <!-- Customize your theme here. -->\r\n    </style>\r\n\r\n    <style name=\"NoActionBarApteki\" parent=\"Theme.MaterialComponents.Light.NoActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/purple_500</item>\r\n        <item name=\"colorPrimaryVariant\">@color/purple_700</item>\r\n        <item name=\"colorOnPrimary\">@color/white</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_700</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\" tools:targetApi=\"l\">@color/backgroundColor</item>\r\n        <!-- Customize your theme here. -->\r\n    </style>\r\n\r\n    <style name=\"Theme.Apteki.NoActionBar\">\r\n        <item name=\"windowActionBar\">false</item>\r\n        <item name=\"windowNoTitle\">true</item>\r\n    </style>\r\n\r\n    <style name=\"Theme.Apteki.AppBarOverlay\" parent=\"ThemeOverlay.AppCompat.Dark.ActionBar\" />\r\n\r\n    <style name=\"Theme.Apteki.PopupOverlay\" parent=\"ThemeOverlay.AppCompat.Light\" />\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/themes.xml	(revision f272112a27efca6d967066e99d20ec8677d2c727)
++++ app/src/main/res/values/themes.xml	(date 1615615217087)
+@@ -36,4 +36,12 @@
+     <style name="Theme.Apteki.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+ 
+     <style name="Theme.Apteki.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
++
++    <style name="qidirish_hu">
++
++        <item name="android:textSize">30sp </item>
++
++        <item name="android:textColor">#FFF887</item>
++
++    </style>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">Apteki</string>\r\n    <string name=\"title_activity_menu\">MenuActivity</string>\r\n    <string name=\"navigation_drawer_open\">Open navigation drawer</string>\r\n    <string name=\"navigation_drawer_close\">Close navigation drawer</string>\r\n    <string name=\"nav_header_title\">Android Studio</string>\r\n    <string name=\"nav_header_subtitle\">android.studio@android.com</string>\r\n    <string name=\"nav_header_desc\">Navigation header</string>\r\n    <string name=\"action_settings\">Settings</string>\r\n    <string name=\"open\">open</string>\r\n    <string name=\"close\">close</string>\r\n    <string name=\"menu_home\">Home</string>\r\n    <string name=\"menu_gallery\">Gallery</string>\r\n    <string name=\"menu_slideshow\">Slideshow</string>\r\n    <!-- TODO: Remove or change this placeholder text -->\r\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision f272112a27efca6d967066e99d20ec8677d2c727)
++++ app/src/main/res/values/strings.xml	(date 1615615079229)
+@@ -14,4 +14,4 @@
+     <string name="menu_slideshow">Slideshow</string>
+     <!-- TODO: Remove or change this placeholder text -->
+     <string name="hello_blank_fragment">Hello blank fragment</string>
+-</resources>
+\ No newline at end of file
++</resources>
+Index: app/src/main/res/layout/fragment_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".mainFragment\">\r\n\r\n    <!-- TODO: Update blank fragment layout -->\r\n    <TextView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:text=\"@string/hello_blank_fragment\" />\r\n\r\n</FrameLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_main.xml	(revision f272112a27efca6d967066e99d20ec8677d2c727)
++++ app/src/main/res/layout/fragment_main.xml	(date 1615615722914)
+@@ -3,12 +3,31 @@
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-    tools:context=".mainFragment">
++    tools:context=".Fragments.mainFragment"
++    tools:ignore="ExtraText"
++    android:background="@color/backgroundColor">
+ 
+-    <!-- TODO: Update blank fragment layout -->
++    <RelativeLayout
++        xmlns:android="http://schemas.android.com/apk/res/android"
++        android:id="@+id/searching_i"
++        android:layout_width="228dp"
++        android:layout_height="133dp"
++        android:layout_alignParentLeft="true"
++        android:layout_marginLeft="73dp"
++        android:layout_alignParentTop="true"
++        android:layout_marginTop="98dp"
++        android:clipToOutline="true"
++        android:background="@drawable/searching_icon"
++        />
+     <TextView
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:text="@string/hello_blank_fragment" />
++        android:layout_width="218dp"
++        android:layout_height="35dp"
++        android:layout_marginTop="284dp"
++        android:layout_marginLeft="20dp"
++        android:fontFamily="Roboto"
++        style="@style/qidirish_hu"
++        android:text="Qidirish hududi:" />
++
++
++</FrameLayout>
+ 
+-</FrameLayout>
+\ No newline at end of file
+Index: app/src/main/res/drawable/tumanni_tanlang.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/tumanni_tanlang.xml	(date 1615614869028)
++++ app/src/main/res/drawable/tumanni_tanlang.xml	(date 1615614869028)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="utf-8"?>
++<vector
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:aapt="http://schemas.android.com/aapt"
++    android:width="228dp"
++    android:height="133dp"
++    android:viewportWidth="228"
++    android:viewportHeight="133"
++    >
++</vector>
+\ No newline at end of file

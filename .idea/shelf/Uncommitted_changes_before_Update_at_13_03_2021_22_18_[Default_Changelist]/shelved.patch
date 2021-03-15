@@ -1,0 +1,268 @@
+Index: app/src/main/res/layout/fragment_eslatma.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_eslatma.xml	(date 1615655900664)
++++ app/src/main/res/layout/fragment_eslatma.xml	(date 1615655900664)
+@@ -0,0 +1,36 @@
++<?xml version="1.0" encoding="utf-8"?>
++<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".Fragments.EslatmaFragment"
++    android:background="@color/backgroundColor">
++    <include layout="@layout/toolbarformenu"/>
++    <!-- TODO: Update blank fragment layout -->
++  <TextView
++      android:layout_width="265dp"
++      android:layout_height="90dp"
++      android:text="Sizda\neslatmalar yoq"
++      android:textSize="35dp"
++      android:gravity="center"
++      android:textColor="@color/white"
++      android:layout_marginTop="121dp"
++      android:layout_gravity="center_horizontal"/>
++    <RelativeLayout
++        xmlns:android="http://schemas.android.com/apk/res/android"
++        android:id="@+id/undraw_ques"
++        android:layout_width="450dp"
++        android:layout_height="317dp"
++        android:layout_alignParentLeft="true"
++        android:layout_marginLeft="-18dp"
++        android:layout_alignParentTop="true"
++        android:layout_marginTop="266dp"
++        android:clipToOutline="true"
++        android:background="@drawable/undraw_ques" />
++
++
++
++
++
++
++</FrameLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/apteki/Fragments/EslatmaFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/apteki/Fragments/EslatmaFragment.kt	(date 1615623348918)
++++ app/src/main/java/com/example/apteki/Fragments/EslatmaFragment.kt	(date 1615623348918)
+@@ -0,0 +1,60 @@
++package com.example.apteki.Fragments
++
++import android.os.Bundle
++import androidx.fragment.app.Fragment
++import android.view.LayoutInflater
++import android.view.View
++import android.view.ViewGroup
++import com.example.apteki.R
++
++// TODO: Rename parameter arguments, choose names that match
++// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
++private const val ARG_PARAM1 = "param1"
++private const val ARG_PARAM2 = "param2"
++
++/**
++ * A simple [Fragment] subclass.
++ * Use the [EslatmaFragment.newInstance] factory method to
++ * create an instance of this fragment.
++ */
++class EslatmaFragment : Fragment() {
++    // TODO: Rename and change types of parameters
++    private var param1: String? = null
++    private var param2: String? = null
++
++    override fun onCreate(savedInstanceState: Bundle?) {
++        super.onCreate(savedInstanceState)
++        arguments?.let {
++            param1 = it.getString(ARG_PARAM1)
++            param2 = it.getString(ARG_PARAM2)
++        }
++    }
++
++    override fun onCreateView(
++        inflater: LayoutInflater, container: ViewGroup?,
++        savedInstanceState: Bundle?
++    ): View? {
++        // Inflate the layout for this fragment
++        return inflater.inflate(R.layout.fragment_eslatma, container, false)
++    }
++
++    companion object {
++        /**
++         * Use this factory method to create a new instance of
++         * this fragment using the provided parameters.
++         *
++         * @param param1 Parameter 1.
++         * @param param2 Parameter 2.
++         * @return A new instance of fragment EslatmaFragment.
++         */
++        // TODO: Rename and change types and number of parameters
++        @JvmStatic
++        fun newInstance(param1: String, param2: String) =
++            EslatmaFragment().apply {
++                arguments = Bundle().apply {
++                    putString(ARG_PARAM1, param1)
++                    putString(ARG_PARAM2, param2)
++                }
++            }
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/values/themes.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources xmlns:tools=\"http://schemas.android.com/tools\">\r\n    <!-- Base application theme. -->\r\n    <style name=\"Theme.Apteki\" parent=\"Theme.MaterialComponents.DayNight.DarkActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/purple_500</item>\r\n        <item name=\"colorPrimaryVariant\">@color/purple_700</item>\r\n        <item name=\"colorOnPrimary\">@color/white</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_700</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\" tools:targetApi=\"l\">?attr/colorPrimaryVariant</item>\r\n        <!-- Customize your theme here. -->\r\n    </style>\r\n\r\n    <style name=\"NoActionBarApteki\" parent=\"Theme.MaterialComponents.Light.NoActionBar\">\r\n        <!-- Primary brand color. -->\r\n        <item name=\"colorPrimary\">@color/purple_500</item>\r\n        <item name=\"colorPrimaryVariant\">@color/purple_700</item>\r\n        <item name=\"colorOnPrimary\">@color/white</item>\r\n        <!-- Secondary brand color. -->\r\n        <item name=\"colorSecondary\">@color/teal_200</item>\r\n        <item name=\"colorSecondaryVariant\">@color/teal_700</item>\r\n        <item name=\"colorOnSecondary\">@color/black</item>\r\n        <!-- Status bar color. -->\r\n        <item name=\"android:statusBarColor\" tools:targetApi=\"l\">@color/backgroundColor</item>\r\n        <!-- Customize your theme here. -->\r\n    </style>\r\n\r\n    <style name=\"Theme.Apteki.NoActionBar\">\r\n        <item name=\"windowActionBar\">false</item>\r\n        <item name=\"windowNoTitle\">true</item>\r\n    </style>\r\n\r\n    <style name=\"Theme.Apteki.AppBarOverlay\" parent=\"ThemeOverlay.AppCompat.Dark.ActionBar\" />\r\n\r\n    <style name=\"Theme.Apteki.PopupOverlay\" parent=\"ThemeOverlay.AppCompat.Light\" />\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/themes.xml	(revision 8586642c8f6e9e4db388a810367492caed9413c5)
++++ app/src/main/res/values/themes.xml	(date 1615615829669)
+@@ -36,4 +36,12 @@
+     <style name="Theme.Apteki.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+ 
+     <style name="Theme.Apteki.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
++
++    <style name="qidirish_hu">
++
++        <item name="android:textSize">30sp </item>
++
++        <item name="android:textColor">#FFF887</item>
++
++    </style>
+ </resources>
+\ No newline at end of file
+Index: app/src/main/java/com/example/apteki/Fragments/mainFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.apteki.Fragments\r\n\r\nimport android.os.Bundle\r\nimport androidx.fragment.app.Fragment\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport com.example.apteki.R\r\n\r\n// TODO: Rename parameter arguments, choose names that match\r\n// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER\r\nprivate const val ARG_PARAM1 = \"param1\"\r\nprivate const val ARG_PARAM2 = \"param2\"\r\n\r\n/**\r\n * A simple [Fragment] subclass.\r\n * Use the [mainFragment.newInstance] factory method to\r\n * create an instance of this fragment.\r\n */\r\nclass mainFragment : Fragment() {\r\n    // TODO: Rename and change types of parameters\r\n    private var param1: String? = null\r\n    private var param2: String? = null\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        arguments?.let {\r\n            param1 = it.getString(ARG_PARAM1)\r\n            param2 = it.getString(ARG_PARAM2)\r\n        }\r\n    }\r\n\r\n    override fun onCreateView(\r\n        inflater: LayoutInflater, container: ViewGroup?,\r\n        savedInstanceState: Bundle?\r\n    ): View? {\r\n        // Inflate the layout for this fragment\r\n        return inflater.inflate(R.layout.fragment_main, container, false)\r\n    }\r\n\r\n    companion object {\r\n        /**\r\n         * Use this factory method to create a new instance of\r\n         * this fragment using the provided parameters.\r\n         *\r\n         * @param param1 Parameter 1.\r\n         * @param param2 Parameter 2.\r\n         * @return A new instance of fragment mainFragment.\r\n         */\r\n        // TODO: Rename and change types and number of parameters\r\n        @JvmStatic\r\n        fun newInstance(param1: String, param2: String) =\r\n            mainFragment().apply {\r\n                arguments = Bundle().apply {\r\n                    putString(ARG_PARAM1, param1)\r\n                    putString(ARG_PARAM2, param2)\r\n                }\r\n            }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/apteki/Fragments/mainFragment.kt	(revision 8586642c8f6e9e4db388a810367492caed9413c5)
++++ app/src/main/java/com/example/apteki/Fragments/mainFragment.kt	(date 1615621999296)
+@@ -1,11 +1,14 @@
+ package com.example.apteki.Fragments
+ 
++import android.content.Intent
+ import android.os.Bundle
+ import androidx.fragment.app.Fragment
+ import android.view.LayoutInflater
+ import android.view.View
+ import android.view.ViewGroup
++import com.example.apteki.ChooseLocationsActivity
+ import com.example.apteki.R
++import kotlinx.android.synthetic.main.fragment_main.*
+ 
+ // TODO: Rename parameter arguments, choose names that match
+ // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+@@ -22,13 +25,19 @@
+     private var param1: String? = null
+     private var param2: String? = null
+ 
++
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         arguments?.let {
+             param1 = it.getString(ARG_PARAM1)
+             param2 = it.getString(ARG_PARAM2)
+         }
+-    }
++
++
++      }
++
++
++
+ 
+     override fun onCreateView(
+         inflater: LayoutInflater, container: ViewGroup?,
+@@ -36,6 +45,7 @@
+     ): View? {
+         // Inflate the layout for this fragment
+         return inflater.inflate(R.layout.fragment_main, container, false)
++
+     }
+ 
+     companion object {
+Index: app/src/main/java/com/example/apteki/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.apteki\r\n\r\nimport android.content.Intent\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport android.os.Bundle\r\nimport kotlinx.android.synthetic.main.activity_main.*\r\n\r\nclass MainActivity : AppCompatActivity() {\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        setContentView(R.layout.activity_main)\r\n        nextImage.setOnClickListener{\r\n             val intent = Intent(this, ChooseLocationsActivity::class.java)\r\n            startActivity(intent)\r\n\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/apteki/MainActivity.kt	(revision 8586642c8f6e9e4db388a810367492caed9413c5)
++++ app/src/main/java/com/example/apteki/MainActivity.kt	(date 1615619485477)
+@@ -4,6 +4,7 @@
+ import androidx.appcompat.app.AppCompatActivity
+ import android.os.Bundle
+ import kotlinx.android.synthetic.main.activity_main.*
++import kotlinx.android.synthetic.main.fragment_main.*
+ 
+ class MainActivity : AppCompatActivity() {
+     override fun onCreate(savedInstanceState: Bundle?) {
+@@ -12,7 +13,6 @@
+         nextImage.setOnClickListener{
+              val intent = Intent(this, ChooseLocationsActivity::class.java)
+             startActivity(intent)
+-
+         }
+     }
+ }
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">Apteki</string>\r\n    <string name=\"title_activity_menu\">MenuActivity</string>\r\n    <string name=\"navigation_drawer_open\">Open navigation drawer</string>\r\n    <string name=\"navigation_drawer_close\">Close navigation drawer</string>\r\n    <string name=\"nav_header_title\">Android Studio</string>\r\n    <string name=\"nav_header_subtitle\">android.studio@android.com</string>\r\n    <string name=\"nav_header_desc\">Navigation header</string>\r\n    <string name=\"action_settings\">Settings</string>\r\n    <string name=\"open\">open</string>\r\n    <string name=\"close\">close</string>\r\n    <string name=\"menu_home\">Home</string>\r\n    <string name=\"menu_gallery\">Gallery</string>\r\n    <string name=\"menu_slideshow\">Slideshow</string>\r\n    <!-- TODO: Remove or change this placeholder text -->\r\n    <string name=\"hello_blank_fragment\">Hello blank fragment</string>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision 8586642c8f6e9e4db388a810367492caed9413c5)
++++ app/src/main/res/values/strings.xml	(date 1615615829681)
+@@ -14,4 +14,4 @@
+     <string name="menu_slideshow">Slideshow</string>
+     <!-- TODO: Remove or change this placeholder text -->
+     <string name="hello_blank_fragment">Hello blank fragment</string>
+-</resources>
+\ No newline at end of file
++</resources>
+Index: app/src/main/res/layout/fragment_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout\r\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@color/backgroundColor\"\r\n    android:orientation=\"vertical\"\r\n    tools:context=\".Fragments.mainFragment\">\r\n\r\n    <include layout=\"@layout/toolbarformenu\"/>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\">\r\n\r\n\r\n    <ImageView\r\n        android:layout_width=\"228dp\"\r\n        android:layout_height=\"133dp\"\r\n        android:layout_gravity=\"center\"\r\n        android:layout_marginTop=\"100px\"\r\n        android:background=\"@drawable/searching_icon\"/>\r\n\r\n    <TextView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginTop=\"50px\"\r\n        android:layout_marginLeft=\"20dp\"\r\n        android:fontFamily=\"@font/roboto_bold\"\r\n        android:text=\"Qidirish Hududi:\"\r\n        android:textColor=\"@color/letter\"\r\n        android:textSize=\"30sp\" />\r\n\r\n    <TextView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginLeft=\"20dp\"\r\n        android:fontFamily=\"@font/roboto_medium\"\r\n        android:text=\"O'zbekiston:\"\r\n        android:textColor=\"@color/white\"\r\n        android:textSize=\"20sp\" />\r\n\r\n    <TextView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginLeft=\"20dp\"\r\n        android:fontFamily=\"@font/roboto_medium\"\r\n        android:text=\"Tumanni Tanlang\"\r\n        android:textColor=\"@color/white\"\r\n        android:textSize=\"18sp\" />\r\n\r\n    </LinearLayout>\r\n\r\n    <androidx.cardview.widget.CardView\r\n        android:layout_width=\"950px\"\r\n        android:layout_height=\"150px\"\r\n        android:layout_marginTop=\"20dp\"\r\n        app:cardCornerRadius=\"40dp\"\r\n        app:cardBackgroundColor=\"@color/buttons\"\r\n        android:elevation=\"0dp\"\r\n        android:outlineSpotShadowColor=\"@color/buttons\"\r\n        android:outlineAmbientShadowColor=\"@color/buttons\"\r\n        android:layout_gravity=\"center_horizontal\">\r\n\r\n        <View\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"15dp\"\r\n            android:background=\"@drawable/search_shape\" />\r\n\r\n        <View\r\n            android:layout_width=\"30dp\"\r\n            android:layout_height=\"match_parent\"\r\n            android:background=\"@drawable/shadow_left\" />\r\n\r\n        <EditText\r\n            android:id=\"@+id/drug_name\"\r\n            android:padding=\"10dp\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:background=\"@null\"\r\n            android:drawablePadding=\"4dp\"\r\n            android:drawableTint=\"@android:color/darker_gray\"\r\n            android:hint=\"Dori nomi\"\r\n            android:inputType=\"textWebEmailAddress\"\r\n            android:maxLines=\"1\"\r\n            android:layout_marginLeft=\"20dp\"\r\n            android:textColorHint=\"@android:color/darker_gray\"\r\n            android:textSize=\"25sp\"\r\n            android:textColor=\"@color/language\"\r\n            android:focusable=\"true\"\r\n            android:clickable=\"true\"/>\r\n\r\n        <ImageButton\r\n            android:layout_width=\"53dp\"\r\n            android:layout_height=\"45dp\"\r\n            android:layout_gravity=\"center|right\"\r\n            android:layout_marginRight=\"10dp\"\r\n            android:background=\"@drawable/button_search\"/>\r\n\r\n    </androidx.cardview.widget.CardView>\r\n\r\n    <TextView\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Dorilar Ro'yxati Yangilandi\"\r\n        android:textColor=\"@color/white\"\r\n        android:layout_marginTop=\"15dp\"\r\n        android:textSize=\"16sp\"\r\n        android:fontFamily=\"sans-serif-medium\"\r\n        android:layout_gravity=\"center_horizontal\"/>\r\n\r\n    <androidx.cardview.widget.CardView\r\n        android:layout_width=\"500px\"\r\n        android:layout_height=\"150px\"\r\n        android:layout_marginTop=\"20dp\"\r\n        app:cardCornerRadius=\"40dp\"\r\n        app:cardBackgroundColor=\"@color/buttons\"\r\n        android:elevation=\"0dp\"\r\n        android:outlineSpotShadowColor=\"@color/buttons\"\r\n        android:outlineAmbientShadowColor=\"@color/buttons\"\r\n        android:layout_gravity=\"center_horizontal\">\r\n\r\n        <View\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"15dp\"\r\n            android:background=\"@drawable/search_shape\" />\r\n\r\n        <View\r\n            android:layout_width=\"25dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:background=\"@drawable/shadow_left\" />\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"Qidiruv\"\r\n            android:textColor=\"@color/language\"\r\n            android:layout_gravity=\"center\"\r\n            android:fontFamily=\"sans-serif-medium\"\r\n            android:textSize=\"19sp\"/>\r\n\r\n    </androidx.cardview.widget.CardView>\r\n\r\n    <ImageButton\r\n        android:layout_width=\"300px\"\r\n        android:layout_height=\"300px\"\r\n        android:layout_marginTop=\"50px\"\r\n        android:layout_marginLeft=\"25px\"\r\n        android:layout_gravity=\"center_horizontal\"\r\n        android:background=\"@drawable/microphone\"/>\r\n\r\n    <TextView\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Speak\"\r\n        android:textColor=\"@color/buttons\"\r\n        android:layout_marginLeft=\"490px\"\r\n        android:fontFamily=\"@font/roboto_medium\"\r\n        android:textSize=\"16sp\"/>\r\n\r\n    <ImageButton\r\n        android:layout_width=\"100px\"\r\n        android:layout_height=\"100px\"\r\n        android:layout_gravity=\"right\"\r\n        android:layout_marginRight=\"50px\"\r\n        android:background=\"@drawable/delete\"/>\r\n\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_main.xml	(revision 8586642c8f6e9e4db388a810367492caed9413c5)
++++ app/src/main/res/layout/fragment_main.xml	(date 1615616098182)
+@@ -44,6 +44,7 @@
+         android:textSize="20sp" />
+ 
+     <TextView
++        android:id="@+id/btn_tumanni_tanlash"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="20dp"
+Index: local.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>## This file must *NOT* be checked into Version Control Systems,\r\n# as it contains information specific to your local configuration.\r\n#\r\n# Location of the SDK. This is only used by Gradle.\r\n# For customization when using a Version Control System, please read the\r\n# header note.\r\n#Sat Mar 13 10:36:29 UZT 2021\r\nsdk.dir=C\\:\\\\Users\\\\Grafik Dizayn 3\\\\AppData\\\\Local\\\\Android\\\\Sdk\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1251
+===================================================================
+--- local.properties	(revision 8586642c8f6e9e4db388a810367492caed9413c5)
++++ local.properties	(date 1615623355693)
+@@ -4,5 +4,5 @@
+ # Location of the SDK. This is only used by Gradle.
+ # For customization when using a Version Control System, please read the
+ # header note.
+-#Sat Mar 13 10:36:29 UZT 2021
+-sdk.dir=C\:\\Users\\Grafik Dizayn 3\\AppData\\Local\\Android\\Sdk
++#Sat Mar 13 13:15:55 UZT 2021
++sdk.dir=C\:\\Users\\sodiq\\AppData\\Local\\Android\\Sdk
+diff --git app/src/main/res/drawable/tumanni_tanlang.xml app/src/main/res/drawable/tumanni_tanlang.xml
+new file mode 100644
