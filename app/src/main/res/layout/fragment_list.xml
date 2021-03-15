@@ -222,7 +222,7 @@
                             android:src="@drawable/ic_location" />
 
                         <TextView
-                            android:id="@+id/LocationOfPharmacy"
+
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:gravity="center"
@@ -245,7 +245,6 @@
                             android:src="@drawable/ic_phone" />
 
                         <TextView
-                            android:id="@+id/NumberOfPharmacy"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:fontFamily="@font/roboto_bold"
@@ -378,14 +377,13 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/LogoOfPharmacy"
+
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:src="@drawable/akmalfarm_logo" />
 
                         <TextView
-                            android:id="@+id/NameOfPharmacy"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -663,14 +661,13 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/LogoOfPharmacy"
+
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:src="@drawable/akmalfarm_logo" />
 
                     <TextView
-                        android:id="@+id/NameOfPharmacy"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -792,7 +789,7 @@
                         android:src="@drawable/ic_location" />
 
                     <TextView
-                        android:id="@+id/LocationOfPharmacy"
+
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center"
@@ -815,7 +812,7 @@
                         android:src="@drawable/ic_phone" />
 
                     <TextView
-                        android:id="@+id/NumberOfPharmacy"
+
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/roboto_bold"
