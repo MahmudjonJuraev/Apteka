@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6FA21C"
+    android:orientation="vertical"
+    tools:context=".ActivityNewNote">
+
+    <include layout="@layout/toolbarformenu"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="343dp"
+        android:layout_height="138dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="117dp"
+
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/note_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="Autofill" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/eslatma"
+        style="@style/sana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="83dp"
+        android:background="#00000000"
+        android:text="Eslatma" />
+
+    <TextView
+        android:id="@+id/card_sana"
+        style="@style/sana"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="270dp"
+        android:text="Sana"
+        android:textSize="22sp" />
+
+    <TextView
+        style="@style/sana"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="217dp"
+        android:layout_marginTop="270dp"
+        android:text="Vaqt"
+
+        android:textSize="22sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="156dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="307dp"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="DuplicateIds" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_vaqt"
+        android:layout_width="156dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="218dp"
+        android:layout_marginTop="307dp"
+        app:cardCornerRadius="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="DuplicateIds" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Takrorlash"
+        style="@style/sana"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginBottom="300dp"
+        android:gravity="center_vertical"
+        android:text="Takrorlash" />
+
+    <RadioButton
+        android:id="@+id/radio_btn_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="375dp" />
+
+    <RelativeLayout
+        android:id="@+id/relative_invisiable_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="420dp"
+        android:visibility="invisible">
+
+        <TextView
+
+            android:id="@+id/bezovta_qil"
+            style="@style/sana"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:text="Har"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/visible_one"
+            android:layout_width="156dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/bezovta_qil"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/arzon_yaqin"
+                android:layout_width="156dp"
+                android:layout_height="51dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/bezovta_qilmaslik"
+            style="@style/sana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/visible_one"
+            android:layout_marginTop="5dp"
+            android:text="Bezota qilmaslik" />
+
+        <RadioButton
+            android:id="@+id/radoo_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/visible_one"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/bezovta_qilmaslik" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_invisiable_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="550dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/dan"
+            style="@style/sana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="...dan"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/gacha"
+            style="@style/sana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="198dp"
+            android:layout_marginTop="5dp"
+            android:text="...gacha"
+            android:textSize="22sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="156dp"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="DuplicateIds" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="156dp"
+            android:layout_height="51dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="191dp"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="DuplicateIds" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_tanlash"
+        android:layout_width="343dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="724dp"
+        android:clickable="true"
+        app:cardCornerRadius="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Tanlash"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

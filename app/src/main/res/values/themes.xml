@@ -36,4 +36,23 @@
     <style name="Theme.Apteki.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Apteki.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="qidirish_hu">
+
+        <item name="android:textSize">30sp </item>
+
+        <item name="android:textColor">#FFF887</item>
+
+    </style>
+    <style name="sana">
+
+        <item name="android:textSize">
+            22sp
+        </item>
+
+        <item name="android:textColor">
+            #FBFBFB
+        </item>
+
+    </style>
 </resources>

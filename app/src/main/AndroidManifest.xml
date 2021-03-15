@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Apteki">
-        <activity android:name=".SearchingPageActivity"></activity>
+        <activity android:name=".ActivityNewNote"></activity>
+        <activity android:name=".SearchingPageActivity" />
         <activity
             android:name=".MenuActivity"
             android:theme="@style/NoActionBarApteki" />
