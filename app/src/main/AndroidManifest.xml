@@ -9,23 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Apteki">
-        <activity android:name=".HomePageActivity"
-            android:theme="@style/NoActionBarApteki"
-            android:windowSoftInputMode="adjustResize"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SearchingPageActivity"></activity>
         <activity
             android:name=".MenuActivity"
-            android:theme="@style/NoActionBarApteki"
-            android:screenOrientation="portrait"/>
+            android:theme="@style/NoActionBarApteki" />
         <activity
             android:name=".ChooseLocationsActivity"
             android:theme="@style/NoActionBarApteki" />
-        <activity android:name=".ChooseLanguages"
-            android:screenOrientation="portrait"/>
+        <activity android:name=".ChooseLanguages" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/NoActionBarApteki"
-            android:screenOrientation="portrait">
+            android:theme="@style/NoActionBarApteki">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

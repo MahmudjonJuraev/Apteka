@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         nextImage.setOnClickListener{
              val intent = Intent(this, HomePageActivity::class.java)
             startActivity(intent)
-
         }
     }
 }
