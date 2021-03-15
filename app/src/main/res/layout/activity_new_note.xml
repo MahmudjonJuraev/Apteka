@@ -16,7 +16,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="21dp"
-        android:layout_marginTop="117dp"
+        android:layout_marginTop="116dp"
         android:elevation="20dp"
         app:cardCornerRadius="10dp"
         app:neomorph_shadow_color="#2C2B2B"
