@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         nextImage.setOnClickListener{
-             val intent = Intent(this, ChooseLocationsActivity::class.java)
+             val intent = Intent(this, HomePageActivity::class.java)
             startActivity(intent)
 
         }
