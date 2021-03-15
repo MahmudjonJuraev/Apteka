@@ -8,27 +8,31 @@
     android:orientation="vertical"
     tools:context=".ActivityNewNote">
 
-    <include layout="@layout/toolbarformenu"/>
+    <include layout="@layout/toolbarformenu" />
 
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="343dp"
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:layout_width="353dp"
         android:layout_height="138dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="29dp"
+        android:layout_marginLeft="21dp"
         android:layout_marginTop="117dp"
-
+        android:elevation="20dp"
         app:cardCornerRadius="10dp"
-        app:cardElevation="4dp"
-        tools:ignore="MissingConstraints">
+        app:neomorph_shadow_color="#2C2B2B"
+        app:neomorph_shadow_type="inner"
+
+        app:neumorph_backgroundColor="@color/white"
+        tools:ignore="MissingClass,MissingConstraints">
 
         <EditText
             android:id="@+id/note_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@null"
             tools:ignore="Autofill" />
-    </androidx.cardview.widget.CardView>
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
     <TextView
         android:id="@+id/eslatma"
@@ -47,7 +51,7 @@
         style="@style/sana"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="29dp"
+        android:layout_marginLeft="27dp"
         android:layout_marginTop="270dp"
         android:text="Sana"
         android:textSize="22sp" />
@@ -59,52 +63,66 @@
         android:layout_marginLeft="217dp"
         android:layout_marginTop="270dp"
         android:text="Vaqt"
-
         android:textSize="22sp" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="156dp"
-        android:layout_height="51dp"
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/btn_sana"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="29dp"
+        android:layout_marginLeft="21dp"
         android:layout_marginTop="307dp"
-        app:cardCornerRadius="10dp">
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_shadow_type="inner">
 
         <TextView
+            android:id="@+id/text_sana"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="25.20.20"
+            android:textColor="@color/black"
+            android:textSize="25dp"
             tools:ignore="DuplicateIds" />
-    </androidx.cardview.widget.CardView>
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
-    <androidx.cardview.widget.CardView
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
         android:id="@+id/card_vaqt"
-        android:layout_width="156dp"
-        android:layout_height="51dp"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="218dp"
         android:layout_marginTop="307dp"
-        app:cardCornerRadius="10dp">
+        android:elevation="10dp"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_shadow_type="inner">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="25:20"
+            android:textColor="@color/black"
+            android:textSize="25dp"
             tools:ignore="DuplicateIds" />
 
-    </androidx.cardview.widget.CardView>
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
     <TextView
         android:id="@+id/Takrorlash"
         style="@style/sana"
         android:layout_width="106dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="29dp"
+        android:layout_marginLeft="27dp"
         android:layout_marginTop="380dp"
         android:layout_marginBottom="300dp"
         android:gravity="center_vertical"
         android:text="Takrorlash" />
 
     <RadioButton
+
         android:id="@+id/radio_btn_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -117,9 +135,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="29dp"
+        android:layout_marginLeft="19dp"
         android:layout_marginTop="420dp"
-        android:visibility="invisible">
+        android:visibility="visible">
 
         <TextView
 
@@ -127,23 +145,27 @@
             style="@style/sana"
             android:layout_width="177dp"
             android:layout_height="wrap_content"
-            android:text="Har"
-            />
+            android:layout_marginLeft="10dp"
+            android:text="Har" />
 
-        <androidx.cardview.widget.CardView
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
             android:id="@+id/visible_one"
-            android:layout_width="156dp"
-            android:layout_height="51dp"
+            android:layout_width="170dp"
+            android:layout_height="65dp"
             android:layout_below="@id/bezovta_qil"
             android:layout_marginTop="4dp"
-            app:cardCornerRadius="10dp">
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_shadow_type="inner">
 
-            <TextView
-                xmlns:android="http://schemas.android.com/apk/res/android"
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/arzon_yaqin"
-                android:layout_width="156dp"
-                android:layout_height="51dp" />
-        </androidx.cardview.widget.CardView>
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="25:20"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
         <TextView
             android:id="@+id/bezovta_qilmaslik"
@@ -151,6 +173,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/visible_one"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:text="Bezota qilmaslik" />
 
@@ -170,56 +193,71 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="29dp"
+        android:layout_marginLeft="19dp"
         android:layout_marginTop="550dp"
-        android:visibility="invisible">
+        android:visibility="visible">
 
         <TextView
             android:id="@+id/dan"
             style="@style/sana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
             android:text="...dan"
             android:textSize="22sp" />
 
         <TextView
+
             android:id="@+id/gacha"
             style="@style/sana"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="198dp"
+            android:layout_marginLeft="205dp"
             android:layout_marginTop="5dp"
             android:text="...gacha"
             android:textSize="22sp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="156dp"
-            android:layout_height="51dp"
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_width="170dp"
+            android:layout_height="65dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="40dp"
-            app:cardCornerRadius="10dp">
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_shadow_type="inner"
+            tools:ignore="MissingClass">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="25:20"
+                android:textColor="@color/black"
+                android:textSize="25dp"
                 tools:ignore="DuplicateIds" />
-        </androidx.cardview.widget.CardView>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="156dp"
-            android:layout_height="51dp"
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_width="170dp"
+            android:layout_height="65dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="191dp"
             android:layout_marginTop="40dp"
-            app:cardCornerRadius="10dp">
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_shadow_type="inner"
+            tools:ignore="MissingClass">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="25:20"
+                android:textColor="@color/black"
+                android:textSize="25dp"
                 tools:ignore="DuplicateIds" />
-        </androidx.cardview.widget.CardView>
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
@@ -236,6 +274,8 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Tanlash"
+            android:textColor="@color/black"
             android:textSize="20sp" />
     </androidx.cardview.widget.CardView>
+
 </RelativeLayout>

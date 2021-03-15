@@ -18,6 +18,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.example.apteki.Fragments.About_app
+import com.example.apteki.Fragments.EslatmaFragment
 import com.example.apteki.Fragments.Survey
 import kotlinx.android.synthetic.main.activity_menu.*
 import kotlinx.android.synthetic.main.toolbar.*
@@ -54,6 +55,10 @@ class MenuActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             R.id.Sorovnoma ->{
                 setToolBar("Second")
                 changeFragment(Survey())
+            }
+            R.id.eslatmalar ->{
+                setToolBar("Second")
+                changeFragment(EslatmaFragment())
             }
         }
         return true
