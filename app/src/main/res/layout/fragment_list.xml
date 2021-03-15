@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragments.ListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                app:neumorph_backgroundColor="#F5F5FA"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/arzontext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Arzonroq"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/ayaqintexttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Yaqinroq"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <soup.neumorphism.NeumorphButton
+                        android:id="@+id/SlideButton"
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        android:background="#F5F5FA"
+                        app:neumorph_shadowElevation="2dp"
+                        app:neumorph_shapeType="flat" />
+                </FrameLayout>
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+<ScrollView
+    android:layout_weight="9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:neumorph_shapeType="pressed"
+                app:neumorph_backgroundColor="@color/backgroundNeumorph">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/LogoOfPharmacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/akmalfarm_logo" />
+
+                        <TextView
+                            android:id="@+id/NameOfPharmacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Akmal farm Dorixonasi"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|bottom"
+                                    android:text="2,3"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|bottom"
+                                    android:text=" Km"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:text="24/7"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="30sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="2 100"
+                                android:textColor="@color/textColor2"
+                                android:textSize="30dp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text=" so'm"
+                                android:textColor="@color/textColor2"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Minimal narx :"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="2 100"
+                                android:textColor="@color/textColor2"
+                                android:textSize="16dp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text=" so'm"
+                                android:textColor="@color/textColor2"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_location" />
+
+                        <TextView
+                            android:id="@+id/LocationOfPharmacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingEnd="20dp"
+                            android:text=" Andijon shaxri, 1-mikrotuman, 6/54 Mo‘ljal: viloyat bolalar shifoxonasi qarshisida"
+                            android:textColor="@color/textColor2"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_phone" />
+
+                        <TextView
+                            android:id="@+id/NumberOfPharmacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="(99) 999-99-99"
+                            android:textColor="@color/textColor2"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <soup.neumorphism.NeumorphButton
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="Qo'ngiroq"
+                                android:textColor="@color/textColor2"
+                                android:textSize="16dp"
+                                app:neumorph_backgroundColor="@color/backgroundNeumorph" />
+
+                            <soup.neumorphism.NeumorphButton
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="Ulanish"
+                                android:textColor="@color/textColor2"
+                                android:textSize="16dp"
+                                app:neumorph_backgroundColor="@color/backgroundNeumorph" />
+                        </LinearLayout>
+
+                        <soup.neumorphism.NeumorphCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_check_circle" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Paracetamol, 200 mg,..."
+                                    android:textColor="@color/textColor2"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:text="1 200"
+                                    android:textColor="@color/textColor2"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:text=" so'm"
+                                    android:textColor="@color/textColor2"
+                                    android:textSize="12dp" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:text="(1x)"
+                                    android:textColor="@color/textColor2"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                        </soup.neumorphism.NeumorphCardView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:neumorph_shapeType="pressed"
+                app:neumorph_backgroundColor="@color/backgroundNeumorph">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/LogoOfPharmacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/akmalfarm_logo" />
+
+                        <TextView
+                            android:id="@+id/NameOfPharmacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Akmal farm Dorixonasi"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|bottom"
+                                    android:text="2,3"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|bottom"
+                                    android:text=" Km"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|top"
+                                android:text="24/7"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingStart="30sp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="2 100"
+                                android:textColor="@color/textColor2"
+                                android:textSize="30dp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text=" so'm"
+                                android:textColor="@color/textColor2"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Minimal narx :"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="2 100"
+                                android:textColor="@color/textColor2"
+                                android:textSize="16dp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text=" so'm"
+                                android:textColor="@color/textColor2"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_location" />
+
+                        <TextView
+                            android:id="@+id/LocationOfPharmacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingEnd="20dp"
+                            android:text=" Andijon shaxri, 1-mikrotuman, 6/54 Mo‘ljal: viloyat bolalar shifoxonasi qarshisida"
+                            android:textColor="@color/textColor2"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_phone" />
+
+                        <TextView
+                            android:id="@+id/NumberOfPharmacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="(99) 999-99-99"
+                            android:textColor="@color/textColor2"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <soup.neumorphism.NeumorphButton
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="Qo'ngiroq"
+                                android:textColor="@color/textColor2"
+                                android:textSize="16dp"
+                                app:neumorph_backgroundColor="@color/backgroundNeumorph" />
+
+                            <soup.neumorphism.NeumorphButton
+                                android:layout_width="150dp"
+                                android:layout_height="70dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="Ulanish"
+                                android:textColor="@color/textColor2"
+                                android:textSize="16dp"
+                                app:neumorph_backgroundColor="@color/backgroundNeumorph" />
+                        </LinearLayout>
+
+                        <soup.neumorphism.NeumorphCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/ic_check_circle" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Paracetamol, 200 mg,..."
+                                    android:textColor="@color/textColor2"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:text="1 200"
+                                    android:textColor="@color/textColor2"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:text=" so'm"
+                                    android:textColor="@color/textColor2"
+                                    android:textSize="12dp" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/roboto_bold"
+                                    android:gravity="center"
+                                    android:text="(1x)"
+                                    android:textColor="@color/textColor2"
+                                    android:textSize="12dp" />
+
+
+                            </LinearLayout>
+
+                        </soup.neumorphism.NeumorphCardView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:neumorph_shapeType="pressed"
+            app:neumorph_backgroundColor="@color/backgroundNeumorph">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/LogoOfPharmacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/akmalfarm_logo" />
+
+                    <TextView
+                        android:id="@+id/NameOfPharmacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Akmal farm Dorixonasi"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:text="2,3"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|bottom"
+                                android:text=" Km"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|top"
+                            android:text="24/7"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="30sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="2 100"
+                            android:textColor="@color/textColor2"
+                            android:textSize="30dp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text=" so'm"
+                            android:textColor="@color/textColor2"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Minimal narx :"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="2 100"
+                            android:textColor="@color/textColor2"
+                            android:textSize="16dp" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text=" so'm"
+                            android:textColor="@color/textColor2"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/LocationOfPharmacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingEnd="20dp"
+                        android:text=" Andijon shaxri, 1-mikrotuman, 6/54 Mo‘ljal: viloyat bolalar shifoxonasi qarshisida"
+                        android:textColor="@color/textColor2"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/NumberOfPharmacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:text="(99) 999-99-99"
+                        android:textColor="@color/textColor2"
+                        android:textSize="25dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <soup.neumorphism.NeumorphButton
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="Qo'ngiroq"
+                            android:textColor="@color/textColor2"
+                            android:textSize="16dp"
+                            app:neumorph_backgroundColor="@color/backgroundNeumorph" />
+
+                        <soup.neumorphism.NeumorphButton
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:text="Ulanish"
+                            android:textColor="@color/textColor2"
+                            android:textSize="16dp"
+                            app:neumorph_backgroundColor="@color/backgroundNeumorph" />
+                    </LinearLayout>
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_check_circle" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Paracetamol, 200 mg,..."
+                                android:textColor="@color/textColor2"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="1 200"
+                                android:textColor="@color/textColor2"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text=" so'm"
+                                android:textColor="@color/textColor2"
+                                android:textSize="12dp" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:text="(1x)"
+                                android:textColor="@color/textColor2"
+                                android:textSize="12dp" />
+
+
+                        </LinearLayout>
+
+                    </soup.neumorphism.NeumorphCardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </soup.neumorphism.NeumorphCardView>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphButton
+        android:layout_weight="1"
+        android:text="Tanlash"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:neumorph_shapeType="pressed"
+        android:layout_gravity="bottom"
+        app:neumorph_backgroundColor="@color/backgroundNeumorph"
+        android:textColor="@color/textColor2"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+</FrameLayout>

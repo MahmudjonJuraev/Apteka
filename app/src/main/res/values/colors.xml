@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="backgroundColor">#6FA21C</color>
+    <color name="backgroundNeumorph">#F5F5FA</color>
     <color name="textColor">#FFF887</color>
     <color name="textColor2">#304F42</color>
     <color name="pressedColor">#304F42</color>
@@ -15,4 +16,5 @@
     <color name="letter">#FFF887</color>
     <color name="language">#304F42</color>
     <color name="buttons">#F5F5FA</color>
+
 </resources>

@@ -12,9 +12,9 @@
     <include layout="@layout/toolbarformenu"/>
 
     <LinearLayout
+        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:orientation="vertical">
 
 
@@ -28,8 +28,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50px"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="50px"
         android:fontFamily="@font/roboto_bold"
         android:text="Qidirish Hududi:"
         android:textColor="@color/letter"
@@ -55,6 +55,7 @@
         android:textSize="18sp" />
 
     </LinearLayout>
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="950px"
