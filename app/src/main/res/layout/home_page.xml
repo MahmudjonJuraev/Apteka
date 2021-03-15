@@ -158,7 +158,7 @@
 
         <ImageButton
             android:id="@+id/dori_search"
-            android:layout_width="53dp"
+            android:layout_width="54dp"
             android:layout_height="45dp"
             android:layout_gravity="center|right"
             android:layout_marginRight="10dp"
