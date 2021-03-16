@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         nextImage.setOnClickListener{
-             val intent = Intent(this, ChooseLocationsActivity::class.java)
+             val intent = Intent(this@MainActivity, MenuActivity::class.java)
             startActivity(intent)
         }
     }

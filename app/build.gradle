@@ -52,4 +52,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.github.4inodev:Neomorphic-FrameLayout-Android:1.03'
     implementation 'com.github.fornewid:neumorphism:0.3.0'
+    implementation'com.github.clans:fab:1.6.4'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    implementation 'com.akexorcist:snap-time-picker:1.0.2'
+    implementation 'com.github.Ibotta:Supported-Picker-Dialogs:1.0.0'
 }

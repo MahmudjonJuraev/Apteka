@@ -16,7 +16,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="21dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="117dp"
         android:elevation="20dp"
         app:cardCornerRadius="10dp"
         app:neomorph_shadow_color="#2C2B2B"
@@ -87,7 +87,7 @@
     </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
 
     <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
-        android:id="@+id/card_vaqt"
+        android:id="@+id/btn_vaqt"
         android:layout_width="170dp"
         android:layout_height="65dp"
         android:layout_alignParentLeft="true"
@@ -99,6 +99,7 @@
         app:neomorph_shadow_type="inner">
 
         <TextView
+            android:id="@+id/text_vaqt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
